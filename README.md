@@ -10,7 +10,7 @@ The project follows a layered PHY‑Core‑Frontend architecture, includes condi
 
 ## Need help?
 
-* If you find a bug or would like propose a feature, post an issue on this repo: https://github.com/ucb-bar/chipyard/issues
+* If you find a bug or would like propose a feature, post an issue on this repo: https://github.com/berrysoftfoundation/XiniX-SoC/issues
 
 ## Contributing
 
