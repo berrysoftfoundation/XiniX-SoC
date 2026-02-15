@@ -78,6 +78,9 @@ chipyard/
                 ├── moca/
                 ├── gnss/
                 └── lte/
+
+---
+
 📦 Verilog Blackboxes
 Located in:
 
@@ -190,11 +193,9 @@ Pull requests are welcome
 ---
 
 ❓ Need Help?
-If you find a bug or want to propose a feature:
-
-https://github.com/berrysoftfoundation/XiniX-SoC/issues
+* If you find a bug or would like propose a feature, post an issue on this repo: https://github.com/berrysoftfoundation/XiniX-SoC/issues
 
 ---
 
 🤝 Contributing
-See: CONTRIBUTING.md
+* See [CONTRIBUTING.md](/CONTRIBUTING.md)
