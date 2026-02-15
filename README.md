@@ -159,8 +159,7 @@ XiniX-SoC/                                   # Root of your XiniX-SoC repository
 ```
 ---
 
-```text
-📦 Verilog Blackboxes Files (placed in generators/chipyard/src/main/resources/vsrc/)
+📦 ##Verilog Blackboxes Files (placed in generators/chipyard/src/main/resources/vsrc/)
 **vpu_blackboxes.v**          # Blackbox for xk264 (H.264) and xk265 (H.265)
 **nvme_blackboxes.v**         # Blackbox for NVMeCHA (NVMe controller)
 **gnss_rf_blackboxes.v**      # Simulation model for GNSS RF front‑end
@@ -168,7 +167,7 @@ XiniX-SoC/                                   # Root of your XiniX-SoC repository
 
 ---
 
-🚀 Getting Started
+🚀 ##Getting Started
 Prerequisites
 Chipyard ≥ 1.13.0
 
@@ -180,20 +179,20 @@ Verilator (for Verilog simulation)
 
 ---
 
-📥 Cloning the Repository
+📥 ##Cloning the Repository
 cd chipyard/generators/chipyard/src/main/scala/
 git clone https://github.com/yourname/xinix.git xinix
 
 ---
 
-📚 External RTL Repositories (to be cloned into generators/)
+📚 ##External RTL Repositories (to be cloned into generators/)
 **NVMeCHA** – https://github.com/yhqiu16/NVMeCHA (VHDL/Verilog)
 **xk264** – https://github.com/openasic-org/xk264 (Verilog)
 **xk265** – https://github.com/openasic-org/xk265 (Verilog)
 
 ---
 
-🛠️ Build System Integration (example for sims/verilator/Makefrag)
+🛠️ ##Build System Integration (example for sims/verilator/Makefrag)
 VSRCS += $(base_dir)/generators/NVMeCHA/hw/NVMe_Controller/NVMe_Controller.srcs/sources_1/NVMe/*.vhd
 VSRCS += $(base_dir)/generators/NVMeCHA/hw/NVMe_Controller/NVMe_Controller.srcs/sources_1/NVMe/*.v
 VSRCS += $(base_dir)/generators/xk264/rtl/*.v
@@ -205,14 +204,14 @@ VSRCS += $(base_dir)/generators/chipyard/src/main/resources/vsrc/jesd204b_phy_bl
 
 ---
 
-Build and run:
+##Build and run:
 cd sims/verilator
 make CONFIG=XiniX -j8
 ./simulator-chipyard-XiniX ../tests/hello.riscv
 
 ---
 
-🧪 Design Philosophy
+🧪 ##Design Philosophy
 Conditional Instantiation
 Modules check externalSourceAvailable and fallback if unavailable.
 
@@ -239,7 +238,7 @@ Standardised interfaces (TileLink control, AXI4‑Stream data, AXI4 DMA)
 
 ---
 
-📄 License
+📄 ##License
 All original code is released under the BSD-3-Clause License.
 
 See LICENSE for details.
@@ -248,7 +247,7 @@ External components retain their original licenses.
 
 ---
 
-🙏 Acknowledgements
+🙏 ##Acknowledgements
 Chipyard
 
 BOOM, Shuttle, Saturn, Gemmini
@@ -265,17 +264,17 @@ Thanks to all contributors to open-source hardware.
 
 ---
 
-📞 Contact & Contributions
+📞 ##Contact & Contributions
 Open issues for bugs or questions
 
 Pull requests are welcome
 
 ---
 
-❓ Need Help?
+❓ ##Need Help?
 * If you find a bug or would like propose a feature, post an issue on this repo: https://github.com/berrysoftfoundation/XiniX-SoC/issues
 
 ---
 
-🤝 Contributing
+🤝 ##Contributing
 * See [CONTRIBUTING.md](/CONTRIBUTING.md)
