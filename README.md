@@ -50,8 +50,6 @@ Place this repository under:
 ```text
 generators/chipyard/src/main/scala/
 Directory Layout
-text
-Copy code
 chipyard/
 └── generators/
     └── chipyard/
@@ -78,7 +76,7 @@ chipyard/
                 ├── moca/
                 ├── gnss/
                 └── lte/
-
+```
 ---
 
 📦 Verilog Blackboxes
