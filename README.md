@@ -160,9 +160,9 @@ XiniX-SoC/                                   # Root of your XiniX-SoC repository
 ---
 
 ## 📦 Verilog Blackboxes Files (placed in generators/chipyard/src/main/resources/vsrc/)
-**vpu_blackboxes.v**          # Blackbox for xk264 (H.264) and xk265 (H.265)
-**nvme_blackboxes.v**         # Blackbox for NVMeCHA (NVMe controller)
-**gnss_rf_blackboxes.v**      # Simulation model for GNSS RF front‑end
+**vpu_blackboxes.v**          # Blackbox for xk264 (H.264) and xk265 (H.265)<br>
+**nvme_blackboxes.v**         # Blackbox for NVMeCHA (NVMe controller)<br>
+**gnss_rf_blackboxes.v**      # Simulation model for GNSS RF front‑end<br>
 **jesd204b_phy_blackbox.v**   # Simulation model for JESD204B PHY
 
 ---
