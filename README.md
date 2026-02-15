@@ -81,8 +81,6 @@ chipyard/
 📦 Verilog Blackboxes
 Located in:
 
-text
-Copy code
 generators/chipyard/src/main/resources/vsrc/
 text
 Copy code
@@ -90,6 +88,9 @@ vpu_blackboxes.v
 nvme_blackboxes.v
 gnss_rf_blackboxes.v
 jesd204b_phy_blackbox.v
+
+---
+
 🚀 Getting Started
 Prerequisites
 Chipyard ≥ 1.13.0
@@ -100,24 +101,25 @@ VCS / Questa / Xcelium (optional)
 
 Verilator (for Verilog simulation)
 
+---
+
 📥 Cloning the Repository
-bash
-Copy code
 cd chipyard/generators/chipyard/src/main/scala/
 git clone https://github.com/yourname/xinix.git xinix
+
+---
+
 📚 Obtaining External RTL Cores
-bash
-Copy code
 cd chipyard/generators
 
 git clone https://github.com/yhqiu16/NVMeCHA.git
 git clone https://github.com/openasic-org/xk264.git
 git clone https://github.com/openasic-org/xk265.git
+
+---
+
 🛠️ Building the Simulator
 Add sources to Makefrag:
-
-makefile
-Copy code
 VSRCS += $(base_dir)/generators/NVMeCHA/hw/NVMe_Controller/NVMe_Controller.srcs/sources_1/NVMe/*.vhd
 VSRCS += $(base_dir)/generators/NVMeCHA/hw/NVMe_Controller/NVMe_Controller.srcs/sources_1/NVMe/*.v
 VSRCS += $(base_dir)/generators/xk264/rtl/*.v
@@ -126,13 +128,16 @@ VSRCS += $(base_dir)/generators/chipyard/src/main/resources/vsrc/vpu_blackboxes.
 VSRCS += $(base_dir)/generators/chipyard/src/main/resources/vsrc/nvme_blackboxes.v
 VSRCS += $(base_dir)/generators/chipyard/src/main/resources/vsrc/gnss_rf_blackboxes.v
 VSRCS += $(base_dir)/generators/chipyard/src/main/resources/vsrc/jesd204b_phy_blackbox.v
-Build and run:
 
-bash
-Copy code
+---
+
+Build and run:
 cd sims/verilator
 make CONFIG=XiniX -j8
 ./simulator-chipyard-XiniX ../tests/hello.riscv
+
+---
+
 🧪 Design Philosophy
 Conditional Instantiation
 Modules check externalSourceAvailable and fallback if unavailable.
@@ -149,12 +154,16 @@ PHY → Core → Frontend separation.
 Standard Interfaces
 TileLink, AXI4, AXI4-Stream.
 
+---
+
 📄 License
 All original code is released under the BSD-3-Clause License.
 
 See LICENSE for details.
 
 External components retain their original licenses.
+
+---
 
 🙏 Acknowledgements
 Chipyard
@@ -171,15 +180,21 @@ xk264 / xk265
 
 Thanks to all contributors to open-source hardware.
 
+---
+
 📞 Contact & Contributions
 Open issues for bugs or questions
 
 Pull requests are welcome
 
+---
+
 ❓ Need Help?
 If you find a bug or want to propose a feature:
 
 https://github.com/berrysoftfoundation/XiniX-SoC/issues
+
+---
 
 🤝 Contributing
 See: CONTRIBUTING.md
